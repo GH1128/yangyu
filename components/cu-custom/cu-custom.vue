@@ -2,11 +2,13 @@
 	<view>
 		<view :class="isNeedBg ? 'cu-custom cu-custom-bg':'cu-custom'" :style="[{height:CustomBar + 'px'}]">
 			<view class="cu-bar fixed" :style="style" :class="[bgImage!=''?'none-bg text-white bg-img':'',bgColor]">
+				<!-- 右边图标 -->
 				<view class="action">
 					<view class="range" @click="BackPage">
 						<slot name="backText"></slot>
 					</view>
 				</view>
+				<!-- 中间标题 -->
 				<view class="content">
 					卖点智控
 				</view>
@@ -60,9 +62,9 @@
 		},
 		methods: {
 			BackPage() {
-				if (this.manualBack){
+				if (this.manualBack) {
 					this.manualBack();
-				}else{
+				} else {
 					uni.navigateBack({
 						delta: 1
 					});
@@ -84,29 +86,26 @@
 		width: 100%;
 		color: white;
 		z-index: 9999;
+		font-size: 15px;
+
+		.action {
+			width: 22px;
+		}
 
 		.fixed {
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
-
-			.action {
-				width: 20%;
-
-				.range {
-					display: inline-block;
-				}
-			}
+			padding: 0 16px;
 
 			.content {
-				width: 60%;
 				text-align: center;
 			}
 
 			.right {
-				width: 20%;
-				text-align: right;
+				width: 22px;
 			}
+
 		}
 
 		.postyle {

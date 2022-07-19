@@ -1,1 +1,11 @@
 @import '@/uni_modules/uni-scss/variables.scss';
+
+	
+		
+	ul,li,p,image{
+		padding: 0;
+		margin: 0;
+	}
+ul li{
+	list-style: none;
+}

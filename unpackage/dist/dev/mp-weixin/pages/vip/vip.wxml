@@ -1,0 +1,1 @@
+<view><cu-custom vue-id="d4e3eff8-1" bind:__l="__l" vue-slots="{{['content']}}"><view class="info-ifo" slot="content">充值中心</view></cu-custom></view>

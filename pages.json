@@ -4,13 +4,7 @@
 		"style": {
 			"navigationBarTitleText": "卖点"
 		}
-	}, {
-		"path": "components/cu-custom/cu-custom",
-		"style": {
-			"navigationBarTitleText": "",
-			"enablePullDownRefresh": false
-		}
-	}, {
+	},  {
 		"path": "pages/vip/vip",
 		"style": {
 			"navigationBarTitleText": "",

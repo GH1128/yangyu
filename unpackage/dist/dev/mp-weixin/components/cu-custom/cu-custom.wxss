@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+._ul, ._li, ._p, image {
+  padding: 0;
+  margin: 0;
+}
+._ul ._li {
+  list-style: none;
+}
+.cu-custom-bg {
+  background: linear-gradient(to right, #001F9F 0%, #006BFD 100%);
+}
+.cu-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 9999;
+  font-size: 15px;
+}
+.cu-custom .action {
+  width: 22px;
+}
+.cu-custom .fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+.cu-custom .fixed .content {
+  text-align: center;
+}
+.cu-custom .fixed .right {
+  width: 22px;
+}
+.cu-custom .postyle {
+  position: fixed;
+  width: 100%;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 2;
+}
+
